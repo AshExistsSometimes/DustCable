@@ -16,6 +16,12 @@ public class GrapplingHook : MonoBehaviour
     [Space]
     public float GrappleSpringiness = 4.5f;
     public float GrappleDamping = 7f;
+    public float GrappleMassScale = 4.5f;
+    [Space]
+    [Range(0f, 1f)]
+    public float SpringMinDistance = 0.25f;
+    [Range(0f, 1f)]
+    public float SpringMaxDistance = 0.8f;
 
 
     // Private Variables
@@ -66,7 +72,7 @@ public class GrapplingHook : MonoBehaviour
 
             _springJoint.spring = GrappleSpringiness;
             _springJoint.damper = GrappleDamping;
-            _springJoint.massScale = 4.5f;
+            _springJoint.massScale = GrappleMassScale;
 
             _lineRenderer.positionCount = 2;
         }
