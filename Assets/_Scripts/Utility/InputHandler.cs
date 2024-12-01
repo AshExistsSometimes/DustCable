@@ -11,8 +11,8 @@ public class InputHandler : MonoBehaviour
     public static KeyCode SprintKey = KeyCode.LeftControl;
 
     public static KeyCode AimKey = KeyCode.Mouse1;
-    public static KeyCode FireKey = KeyCode.Mouse0;
-    public static KeyCode GrappleKey = KeyCode.Mouse5;
+    public static KeyCode FireKey = KeyCode.Mouse5;
+    public static KeyCode GrappleKey = KeyCode.Mouse0;
 
     public static KeyCode InteractKey = KeyCode.F;
 
